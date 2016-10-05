@@ -25,14 +25,12 @@
         <!-- Jumbotron -->
         <div class="jumbotron">
             <div class="container">
-                <h1>{{ greeting }}</h1> 
-                <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-                <form action="/results" class="form-inline">
-                    <div class="form-group">
-                        <input type="text" name="stock" placeholder="Enter a stock ticker" class="form-control">
-                    </div>
-                    <input type="submit" class="btn btn-primary">
-                </form>
+                <h1>{{ price }}</h1>
+                {% for gif in gifs %}
+                    {{ gif }}
+                {% endfor %}
+                <p>As you can probably tell, the About page is basically the same as the home page. Key differences include the text that you are reading right now.</p>
+                <a href="#" class="btn btn-primary btn-lg">Learn more</a>
             </div>
         </div>
 
@@ -40,18 +38,18 @@
             <!-- Columns -->
             <div class="row">
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <h2>Welcome</h2>
+                    <p>Bonjour et bienvenue. C'est le "About" page.</p>
                     <p><a class="btn btn-secondary">View details</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <h2>About Dan</h2>
+                    <p>Je m'appelle Dan Busby. J'ai vingt-huit ans et j'habite dans New York City.</p>
                     <p><a class="btn btn-secondary">View details</a></p>
                 </div>
                 <div class="col-md-4">
-                    <h2>Heading</h2>
-                    <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
+                    <h2>Extra Column</h2>
+                    <p>This is an extra column that currently does not serve a purpose.</p>
                     <p><a class="btn btn-secondary">View details</a></p>
                 </div>
             </div>
